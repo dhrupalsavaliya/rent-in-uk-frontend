@@ -4,6 +4,9 @@ const nextConfig = {
   swcMinify: false,
   experimental:{
     appDir:true
+  },
+  images:{
+    domains: ['findhouse-nextjs.netlify.app']
   }
 };
 
