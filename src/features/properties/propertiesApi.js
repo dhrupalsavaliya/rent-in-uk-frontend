@@ -4,7 +4,7 @@ export const propertiesApi = api.injectEndpoints({
     endpoints: (builder) => ({
         getProperties: builder.query({
             query: () => ({
-                url: "/properties",
+                url: "/property-list",
                 method: "GET",
             }),
         }),

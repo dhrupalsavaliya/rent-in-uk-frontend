@@ -1,9 +1,23 @@
 import Link from "next/link";
 import Slider from "react-slick";
-import properties from "../../data/properties";
+//import properties from "../../data/properties";
 import Image from "next/image";
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { getProperties } from '../../features/propertyLists/propertyListsSlice'
 
 const FeaturedProperties = () => {
+
+  const propertieList = useSelector((state) => state.propertyList.data)
+  
+  const properties = propertieList ? propertieList.data : [];
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(getProperties())
+  }, []);
+
+
   const settings = {
     dots: false,
     arrows: true,
@@ -50,7 +64,7 @@ const FeaturedProperties = () => {
   return (
     <>
       <Slider {...settings} arrows={true}>
-        {properties.slice(15, 21).map((item) => (
+        {properties.slice(0,5).map((item) => (
           <div className="item" key={item.id}>
             <div className="properti_city home6">
               <div className="thumb">

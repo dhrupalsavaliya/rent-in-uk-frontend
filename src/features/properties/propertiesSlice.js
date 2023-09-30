@@ -1,6 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
+    data:[],
+    count:0,
     keyword: "",
     propertyType: "",
     location: "",
@@ -25,6 +27,9 @@ export const propertiesSlice = createSlice({
     name: "properties",
     initialState,
     reducers: {
+        getProperties: (state, action) => {
+            state.data = action.payload  
+        },
         addKeyword: (state, action) => {
             state.keyword = action.payload;
         },
@@ -95,5 +100,6 @@ export const {
     addAreaMax,
     addLength,
     resetAmenities,
+    getProperties,
 } = propertiesSlice.actions;
 export default propertiesSlice.reducer;
