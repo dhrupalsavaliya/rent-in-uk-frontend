@@ -7,10 +7,9 @@ const Footer = () => {
     <>
       <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 pr0 pl0">
         <div className="footer_about_widget">
-          <h4>About Site</h4>
+          <h4>About Rent Home In UK</h4>
           <p>
-            We’re reimagining how you buy, sell and rent. It’s now easier to get
-            into a place you love. So let’s do this, together.
+            Welcome to the premier online marketplace for landlords and renters in the UK. We empower landlords to showcase their properties and help renters find their ideal home sweet home. Whether you're looking for a cozy flat, a spacious house, or a stylish apartment, our platform connects you to a world of opportunities
           </p>
         </div>
       </div>
@@ -24,16 +23,16 @@ const Footer = () => {
               <Link href="/">About Us</Link>
             </li>
             <li>
-              <Link href="/">Terms & Conditions</Link>
+              <Link href="/">About Landlords</Link>
             </li>
             <li>
-              <Link href="/">User’s Guide</Link>
+              <Link href="/">About Tenants</Link>
             </li>
             <li>
-              <Link href="/">Support Center</Link>
+              <Link href="/">About Agents</Link>
             </li>
             <li>
-              <Link href="/">Press Info</Link>
+              <Link href="/">Contact & Support</Link>
             </li>
           </ul>
         </div>
@@ -45,7 +44,7 @@ const Footer = () => {
           <h4>Contact Us</h4>
           <ul className="list-unstyled">
             <li>
-              <a href="mailto:info@findhouse.com">info@findhouse.com</a>
+              <a href="mailto:info@renthomeinuk.co.uk">info@renthomeinuk.co.uk</a>
             </li>
             <li>
               <a href="#">Collins Street West, Victoria</a>

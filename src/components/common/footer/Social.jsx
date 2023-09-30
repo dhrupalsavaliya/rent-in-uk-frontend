@@ -1,10 +1,8 @@
 const Social = () => {
   const socialContent = [
-    { id: 1, liveLink: "https://www.facebook.com/", icon: "fa-facebook" },
-    { id: 2, liveLink: "https://www.twitter.com/", icon: "fa-twitter" },
-    { id: 3, liveLink: "https://www.instagram.com/", icon: "fa-instagram" },
-    { id: 4, liveLink: "https://www.pinterest.com/", icon: "fa-pinterest" },
-    { id: 5, liveLink: "https://www.dribbble.com/", icon: "fa-dribbble" },
+    { id: 1, liveLink: "https://www.facebook.com/people/Renthomeinukcouk/61550946855145/", icon: "fa-facebook" },
+    { id: 2, liveLink: "https://www.twitter.com/#", icon: "fa-twitter" },
+    { id: 3, liveLink: "https://www.instagram.com/renthomeinuk", icon: "fa-instagram" },
   ];
   return (
     <>
