@@ -153,7 +153,13 @@ const index = () => {
 
       <section className="start-partners bgc-thm pt50 pb50">
         <div className="container">
-          <CallToAction />
+          <CallToAction
+            title="Become a Real Estate Agent"
+            description="We only work with the best companies around the globe"
+            buttonText="Register Now"
+            redirectTo="/register"
+            component="Home"
+          />
         </div>
       </section>
 

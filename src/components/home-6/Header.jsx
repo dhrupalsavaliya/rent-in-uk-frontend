@@ -37,7 +37,7 @@ const Header = () => {
               alt="header-logo.png"
             />
             <Image
-              width={40}
+              width={200}
               height={45}
               className="logo2 img-fluid"
               src="/assets/images/home/rent-home-in-uk-logo.png"
@@ -46,7 +46,7 @@ const Header = () => {
           </Link>
           {/* site logo brand */}
 
-          <div className="ht_left_widget float-left">
+          {/* <div className="ht_left_widget float-left">
             <ul>
               <li className="list-inline-item dn-1440">
                 <div className="ht_search_widget">
@@ -66,7 +66,7 @@ const Header = () => {
                 </div>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <nav className="ms-auto">
             <HeaderMenuContent />

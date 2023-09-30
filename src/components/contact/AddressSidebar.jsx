@@ -21,7 +21,7 @@ const AddressSidebar = () => {
       </div>
       <div className="content_list">
         <h5>Mail</h5>
-        <p>info@findhouse.com</p>
+        <p>info@renthomeinuk.co.uk</p>
       </div>
       <div className="content_list">
         <h5>Skype</h5>
