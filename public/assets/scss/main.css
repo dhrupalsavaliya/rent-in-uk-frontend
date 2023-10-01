@@ -13,7 +13,7 @@ Tag: advanced custom search, agency, agent, business, clean, corporate, director
 @import url(../scss/font-awesome.min.css);
 @import url(../scss/font-awesome-animation.min.css);
 @import url(../scss/flaticon.css);
-
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
 /* Table of contents */
 
 /*== Typography ==*/
@@ -123,7 +123,7 @@ body {
   background-attachment: fixed;
   background-color: #ffffff;
   color: #777777;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
   line-height: 1.642;
   overflow-x: hidden;
@@ -3632,14 +3632,14 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .home-text.home6 h2 {
-  font-family: "Nunito";
+  font-family: 'Arvo';
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
 }
 
 .home-text.home6 p {
-  font-family: "Nunito";
+  font-family: 'Arvo';
   color: #484848;
   line-height: 1.2;
 }
@@ -16127,10 +16127,12 @@ legend span {
 
 .fz55 {
   font-size: 55px;
+  font-family: 'Arvo', sans-serif;
 }
 @media (max-width: 991px) {
   .fz55 {
     font-size: 40px;
+    font-family: 'Arvo', sans-serif;
   }
 }
 
