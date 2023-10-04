@@ -33,15 +33,15 @@ const Header = () => {
               width={200}
               height={45}
               className="logo1 img-fluid"
-              src="/assets/images/home/rent-home-in-uk-logo.png"
-              alt="header-logo.png"
+              src="/assets/images/home/rent-home-in-uk-logo.ico"
+              alt="header-logo.ico"
             />
             <Image
               width={200}
               height={45}
               className="logo2 img-fluid"
-              src="/assets/images/home/rent-home-in-uk-logo.png"
-              alt="header-logo2.png"
+              src="/assets/images/home/rent-home-in-uk-logo.ico"
+              alt="header-logo2.ico"
             />
           </Link>
           {/* site logo brand */}

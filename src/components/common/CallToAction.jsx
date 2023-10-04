@@ -17,9 +17,9 @@ const CallToAction = (props) => {
 
       <div className="col-lg-4">
         <div className="parner_reg_btn text-right tac-smd">
-          <Link href={redirectTo} className="btn btn-thm2">
+          {/* <Link href={redirectTo} className="btn btn-thm2">
             {buttonText}
-          </Link>
+          </Link> */}
         </div>
       </div>
       {/* End .col */}

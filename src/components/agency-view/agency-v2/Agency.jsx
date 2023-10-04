@@ -44,7 +44,7 @@ const Agency = () => {
           <div className="details">
             <div className="tc_content">
               <h4>
-                <Link href={`/agency-details/${item.id}`}>{item.name}</Link>
+                <Link href={`/agency-details/${item.id}` }>{item.name}</Link>
               </h4>
               <p className="text-thm">{item.type}</p>
               <ul className="prop_details mb0">

@@ -20,19 +20,19 @@ const Footer = () => {
           <h4>Quick Links</h4>
           <ul className="list-unstyled">
             <li>
-              <Link href="/">About Us</Link>
+              <Link href="/about-us">About Us</Link>
             </li>
             <li>
-              <Link href="/">About Landlords</Link>
+              <Link href="/landlord">About Landlords</Link>
             </li>
             <li>
-              <Link href="/">About Tenants</Link>
+              <Link href="/tenants">About Tenants</Link>
             </li>
             <li>
-              <Link href="/">About Agents</Link>
+              <Link href="/agent-v1">About Agents</Link>
             </li>
             <li>
-              <Link href="/">Contact & Support</Link>
+              <Link href="/contact">Contact & Support</Link>
             </li>
           </ul>
         </div>
@@ -47,10 +47,7 @@ const Footer = () => {
               <a href="mailto:info@renthomeinuk.co.uk">info@renthomeinuk.co.uk</a>
             </li>
             <li>
-              <a href="#">Collins Street West, Victoria</a>
-            </li>
-            <li>
-              <a href="#">8007, Australia.</a>
+              <a href="https://visitcoventry.co.uk/">Coventry, UK</a>
             </li>
             <li>
               <a href="tel:+4733378901">+1 246-345-0699</a>
@@ -69,8 +66,8 @@ const Footer = () => {
           <ul className="mb30">
             <Social />
           </ul>
-          <h4>Subscribe</h4>
-          <SubscribeForm />
+          {/* <h4>Subscribe</h4>
+          <SubscribeForm /> */}
         </div>
       </div>
     </>

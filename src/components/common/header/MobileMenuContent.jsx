@@ -257,8 +257,8 @@ const MobileMenuContent = () => {
               width={40}
               height={45}
               className="nav_logo_img img-fluid mt20"
-              src="/assets/images/header-logo2.png"
-              alt="header-logo.png"
+              src="/assets/images/header-logo2.ico"
+              alt="header-logo2.ico"
             />
             <span className="brand-text">FindHouse</span>
           </Link>
