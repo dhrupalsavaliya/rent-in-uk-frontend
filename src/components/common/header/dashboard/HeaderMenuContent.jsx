@@ -396,7 +396,7 @@ const HeaderMenuContent = ({ float = "" }) => {
           href="/contact"
           className={route.pathname === "/contact" ? "ui-active" : undefined}
         >
-          <a> Contact </a>
+          Contact
         </Link>
       </li>
       {/* End .dropitem */}
