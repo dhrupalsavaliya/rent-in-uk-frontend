@@ -33,15 +33,15 @@ const Header = () => {
               width={40}
               height={45}
               className="logo1 img-fluid"
-              src="/assets/images/header-logo.png"
-              alt="header-logo.png"
+              src="/assets/images/header-logo.ico"
+              alt="header-logo.ico"
             />
             <Image
               width={40}
               height={45}
               className="logo2 img-fluid"
-              src="/assets/images/header-logo2.png"
-              alt="header-logo2.png"
+              src="/assets/images/header-logo2.ico"
+              alt="header-logo2.ico"
             />
             <span>FindHouse</span>
           </Link>

@@ -19,8 +19,8 @@ const PropertyLocation = () => {
               width={40}
               height={45}
               className="map_img_icon"
-              src="/assets/images/header-logo.png"
-              alt="header-logo.png"
+              src="/assets/images/header-logo.ico"
+              alt="header-logo.ico"
             />
           </a>
         </div>

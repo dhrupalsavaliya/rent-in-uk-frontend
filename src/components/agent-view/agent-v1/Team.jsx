@@ -34,7 +34,7 @@ const Team = () => {
       <div className="col-md-6 col-lg-6" key={item.id}>
         <div className="feat_property home7 agent">
           <div className="thumb">
-            <Link href={`/agent-details/${item.id}`}>
+            <Link href={`/agent-details/${item.id}` }>
               <Image
                 width={342}
                 height={262}
