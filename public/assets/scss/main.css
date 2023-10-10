@@ -6258,6 +6258,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   padding: 30px 0;
   position: relative;
   text-align: center;
+  width: 234px;
 }
 
 .icon_hvr_img_box:before {
@@ -19747,4 +19748,46 @@ button.gm-ui-hover-effect:focus {
 
 .pro-sidebar .pro-menu a.ui-active {
   color: var(--color-primary) !important;
+}
+/* 
+.MuiTab-wrapper {
+  font-size: 17px;
+}
+
+.MuiTab-textColorPrimary.Mui-selected {
+  color: black !important;
+}
+
+.MuiTab-textColorPrimary.Mui-selected {
+  color: #ff5a5f;
+} */
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: black !important;
+    font-size: 17px;
+}
+
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+  font-size: 17px;
+}
+
+.css-11yukd5-MuiTabs-indicator {
+  background-color: #ff5a5f !important;
+}
+
+.css-heg063-MuiTabs-flexContainer {
+  justify-content: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap !important;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-direction: row;
+  align-items: center;
 }
