@@ -13,7 +13,6 @@ import Hero from "./Hero";
 import ComfortPlace from "../home-8/ComfortPlace";
 import CallToAction from "../common/CallToAction";
 import WhyChoose from "../common/WhyChoose";
-
 import Link from "next/link";
 import React, { useState } from "react";
 import PropTypes from "prop-types";
@@ -95,7 +94,7 @@ const index = () => {
                 <h2>Featured Properties</h2>
                 <p>
                   Handpicked properties by our team.{" "}
-                  <a className="float-end" href="/listing-list">
+                  <a className="float-end" href="/property-list">
                     View All <span className="flaticon-next"></span>
                   </a>
                 </p>
@@ -347,7 +346,7 @@ const index = () => {
       </section>
 
       {/* <!-- Our Footer --> */}
-      <section className="footer_one home6 bgc-f7">
+      <section className="footer_one">
         <div className="container">
           <div className="row">
             <Footer />
@@ -356,7 +355,7 @@ const index = () => {
       </section>
 
       {/* <!-- Our Footer Bottom Area --> */}
-      <section className="footer_middle_area home6 pt30 pb30">
+      <section className="footer_middle_area pt30 pb30">
         <div className="container">
           <CopyrightFooter />
         </div>
