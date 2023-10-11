@@ -14,7 +14,64 @@ import ComfortPlace from "../home-8/ComfortPlace";
 import CallToAction from "../common/CallToAction";
 import WhyChoose from "../common/WhyChoose";
 
+import Link from "next/link";
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import comfortPlace from "../../data/comfortPlace";
+
+const PropertyList = comfortPlace;
+function CustomTabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 4 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
+
+CustomTabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
+
 const index = () => {
+  const [value, setValue] = useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  const filteredProperties = {
+    "Single Occupancy": PropertyList.filter(
+      (property) => property.type === "Single Occupancy"
+    ),
+    "Entire House": PropertyList.filter(
+      (property) => property.type === "Entire House"
+    ),
+    "Entire Flat": PropertyList.filter(
+      (property) => property.type === "Entire Flat"
+    ),
+    "Other Property Types": PropertyList.filter(
+      (property) => property.type === "Other Property Types"
+    ),
+  };
+
   return (
     <>
       {/* <!-- Main Header Nav --> */}
@@ -110,12 +167,138 @@ const index = () => {
               </div>
             </div>
           </div>
-          <div className="row">
-            <ComfortPlace />
+          <div className="container">
+              <Box sx={{ width: "100%" }}>
+                <Box sx={{ borderBottom: 1, borderColor: "divider" }} >
+                  <Tabs
+                    value={value}
+                    onChange={handleChange}
+                    aria-label="basic tabs example"
+                    indicatorColor="secondary"
+                  >
+                    <Tab label="Single Occupancy"/>
+                    <Tab label="Entire House"/>
+                    <Tab label="Entire Flat"/>
+                    <Tab label="Other Property Types"/>
+                  </Tabs>
+                </Box>
+                <CustomTabPanel value={value} index={0} className="list-house">
+                  <div className="flex-container">
+                  {filteredProperties["Single Occupancy"].map((property) => (
+                    <div key={property.id}>
+                      <div className="col-sm-6 col-lg-3" key={property.id}>
+                        <Link
+                          href="/listing-grid-v5"
+                          className="icon_hvr_img_box image-1 d-block"
+                          style={{
+                            backgroundImage: `url(${property.bgImg})`,
+                          }}
+                        >
+                          <div className="overlay">
+                            <div className="icon">
+                              <span className={property.icon}></span>
+                            </div>
+                            <div className="details">
+                              <h4>{property.name}</h4>
+                              <p>{property.number} Listings</p>
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                  ))}
+                  </div>
+                </CustomTabPanel>
+                <CustomTabPanel value={value} index={1}>
+                <div className="flex-container">
+                  {filteredProperties["Entire House"].map((property) => (
+                    <div key={property.id}>
+                      <div className="col-sm-6 col-lg-3" key={property.id}>
+                        <Link
+                          href="/listing-grid-v5"
+                          className="icon_hvr_img_box image-1 d-block"
+                          style={{
+                            backgroundImage: `url(${property.bgImg})`,
+                          }}
+                        >
+                          <div className="overlay">
+                            <div className="icon">
+                              <span className={property.icon}></span>
+                            </div>
+                            <div className="details">
+                              <h4>{property.name}</h4>
+                              <p>{property.number} Listings</p>
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                  ))}
+                  </div>
+                </CustomTabPanel>
+                <CustomTabPanel value={value} index={2}>
+                <div className="flex-container">
+                  {filteredProperties["Entire Flat"].map((property) => (
+                    <div key={property.id}>
+                      <div className="col-sm-6 col-lg-3" key={property.id}>
+                        <Link
+                          href="/listing-grid-v5"
+                          className="icon_hvr_img_box image-1 d-block"
+                          style={{
+                            backgroundImage: `url(${property.bgImg})`,
+                          }}
+                        >
+                          <div className="overlay">
+                            <div className="icon">
+                              <span className={property.icon}></span>
+                            </div>
+                            <div className="details">
+                              <h4>{property.name}</h4>
+                              <p>{property.number} Listings</p>
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                  ))}
+                  </div>
+                </CustomTabPanel>
+                <CustomTabPanel value={value} index={3}>
+                <div className="flex-container">
+                  {filteredProperties["Other Property Types"].map(
+                    (property) => (
+                      <div key={property.id}>
+                        <div className="col-sm-6 col-lg-3" key={property.id}>
+                          <Link
+                            href="/listing-grid-v5"
+                            className="icon_hvr_img_box image-1 d-block"
+                            style={{
+                              backgroundImage: `url(${property.bgImg})`,
+                            }}
+                          >
+                            <div className="overlay">
+                              <div className="icon">
+                                <span className={property.icon}></span>
+                              </div>
+                              <div className="details">
+                                <h4>{property.name}</h4>
+                                <p>{property.number} Listings</p>
+                              </div>
+                            </div>
+                          </Link>
+                        </div>
+                      </div>
+                    )
+                  )}
+                  </div>
+                </CustomTabPanel>
+              </Box>
           </div>
+          {/* <div className="row">
+            <ComfortPlace />
+          </div> */}
         </div>
       </section>
-    
 
       {/* <!-- Our Blog --> */}
       <section className="our-blog bb1 pb30">
